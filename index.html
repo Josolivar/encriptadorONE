@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decodificador de Texto ONE</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <img class="emblema" src="./assets/jota.jpg" width="92" height="83" />
+      </div>
+      <div class="botao-copiador">
+        <button class="botao" name="copiador">
+          Clique aqui para copiar o resultado
+        </button>
+      </div>
+    </header>
+    <main class="principal">
+      <div class="principal__entrada">
+        <textarea
+          class="principal__entrada__texto"
+          type="text"
+          name="texto_entrada"
+          id="entradaTexto"
+          placeholder="Digite seu texto aqui. Lembre-se: máximo 5 mil caracteres e apenas letras minúsculas!"
+          rows="30"
+          cols="20"
+          maxlength="5000"
+        ></textarea>
+        <div id="msg-erro" style="color: red; display: none">
+          Por favor, insira apenas letras minúsculas.
+        </div>
+      </div>
+      <div class="principal__saida">
+        <img
+          class="principal__saida__fundo"
+          src="./assets/hieroglifos.jpg"
+          alt="Foto de hieróglifos"
+        />
+        <div
+          class="principal__saida__texto"
+          type="text"
+          name="texto_saida"
+          id="saidaTexto"
+        >
+          Aperte um dos botões e veja o resultado aqui:
+        </div>
+      </div>
+    </main>
+    <footer class="botoes">
+      <div class="container__botoes">
+        <button class="botao" name="codificador">Criptografar</button>
+        <button class="botao" name="decodificador">Descriptografar</button>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
